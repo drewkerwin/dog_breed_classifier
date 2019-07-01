@@ -13156,7 +13156,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -13209,7 +13209,7 @@ There are 8351 total dog images.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">cv2</span>                
@@ -13293,7 +13293,7 @@ There are 8351 total dog images.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># returns &quot;True&quot; if face is detected in image stored at img_path</span>
@@ -13327,14 +13327,14 @@ There are 8351 total dog images.
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong> 
 percentage human faces detected: 98 % in human collection
-percentage dog faces detected: 83 % in dog collection</p>
+percentage human faces detected: 17 % in dog collection</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tqdm</span> <span class="k">import</span> <span class="n">tqdm</span>
@@ -13357,7 +13357,7 @@ percentage dog faces detected: 83 % in dog collection</p>
 <span class="n">num_human_faces</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">face</span> <span class="ow">in</span> <span class="n">dog_files_short</span><span class="p">:</span>
     <span class="n">found</span> <span class="o">=</span> <span class="n">face_detector</span><span class="p">(</span><span class="n">face</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">found</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">found</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
         <span class="n">num_human_faces</span> <span class="o">+=</span> <span class="mi">1</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;percentage dog faces detected: </span><span class="si">{}</span><span class="s2"> </span><span class="si">% i</span><span class="s2">n dog collection&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num_human_faces</span><span class="p">))</span>
@@ -13378,7 +13378,7 @@ percentage dog faces detected: 83 % in dog collection</p>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>percentage human faces detected: 98 % in human collection
-percentage dog faces detected: 83 % in dog collection
+percentage dog faces detected: 17 % in dog collection
 </pre>
 </div>
 </div>
@@ -13389,7 +13389,7 @@ percentage dog faces detected: 83 % in dog collection
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#view of some of the faces to determine if there are actually </span>
@@ -13529,7 +13529,7 @@ percentage dog faces detected: 83 % in dog collection
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">torch</span>
@@ -13561,7 +13561,7 @@ percentage dog faces detected: 83 % in dog collection
 
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>Downloading: &#34;https://download.pytorch.org/models/vgg16-397923af.pth&#34; to /root/.torch/models/vgg16-397923af.pth
-100%|██████████| 553433881/553433881 [00:05&lt;00:00, 98118032.66it/s] 
+100%|██████████| 553433881/553433881 [00:27&lt;00:00, 19844386.13it/s]
 </pre>
 </div>
 </div>
@@ -13602,7 +13602,7 @@ percentage dog faces detected: 83 % in dog collection
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="k">import</span> <span class="n">Image</span>
@@ -13629,7 +13629,7 @@ percentage dog faces detected: 83 % in dog collection
        <span class="n">std</span><span class="o">=</span><span class="p">[</span><span class="mf">0.229</span><span class="p">,</span> <span class="mf">0.224</span><span class="p">,</span> <span class="mf">0.225</span><span class="p">]</span>
     <span class="p">)</span>
     <span class="n">preprocess</span> <span class="o">=</span> <span class="n">transforms</span><span class="o">.</span><span class="n">Compose</span><span class="p">([</span>
-       <span class="n">transforms</span><span class="o">.</span><span class="n">RandomResizedCrop</span><span class="p">(</span><span class="mi">224</span><span class="p">),</span>
+       <span class="n">transforms</span><span class="o">.</span><span class="n">CenterCrop</span><span class="p">(</span><span class="mi">224</span><span class="p">),</span>
        <span class="n">transforms</span><span class="o">.</span><span class="n">ToTensor</span><span class="p">(),</span>
        <span class="n">normalize</span>
     <span class="p">])</span>
@@ -13683,7 +13683,7 @@ percentage dog faces detected: 83 % in dog collection
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### returns &quot;True&quot; if a dog is detected in the image stored at img_path</span>
@@ -13726,36 +13726,36 @@ percentage dog faces detected: 83 % in dog collection
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong> 
-percentage human faces correctly identified by dog detector: 99 % in human collection
-percentage dog faces detected by dog detector: 99 % in dog collection</p>
+percentage dog faces identified by dog detector: 1 % in human collection
+percentage dog faces identified by dog detector: 91 % in dog collection</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### TODO: Test the performance of the dog_detector function</span>
 <span class="c1">### on the images in human_files_short and dog_files_short.</span>
 
 
-<span class="n">num_correct_faces</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">number_dogs_found</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">face</span> <span class="ow">in</span> <span class="n">human_files_short</span><span class="p">:</span>
     <span class="n">found</span> <span class="o">=</span> <span class="n">dog_detector</span><span class="p">(</span><span class="n">face</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">found</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
-        <span class="n">num_correct_faces</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">found</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">number_dogs_found</span> <span class="o">+=</span> <span class="mi">1</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;percentage human faces correctly identified by dog detector: </span><span class="si">{}</span><span class="s2"> </span><span class="si">% i</span><span class="s2">n human collection&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num_correct_faces</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;percentage dog faces identified by dog detector: </span><span class="si">{}</span><span class="s2"> </span><span class="si">% i</span><span class="s2">n human collection&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">number_dogs_found</span><span class="p">))</span>
 
-<span class="n">num_correct_faces</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">number_dogs_found</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">face</span> <span class="ow">in</span> <span class="n">dog_files_short</span><span class="p">:</span>
     <span class="n">found</span> <span class="o">=</span> <span class="n">dog_detector</span><span class="p">(</span><span class="n">face</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">found</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="n">num_correct_faces</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">number_dogs_found</span> <span class="o">+=</span> <span class="mi">1</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;percentage dog faces detected by dog detector: </span><span class="si">{}</span><span class="s2"> </span><span class="si">% i</span><span class="s2">n dog collection&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num_correct_faces</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;percentage dog faces identified by dog detector: </span><span class="si">{}</span><span class="s2"> </span><span class="si">% i</span><span class="s2">n dog collection&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">number_dogs_found</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -13772,8 +13772,8 @@ percentage dog faces detected by dog detector: 99 % in dog collection</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>percentage human faces correctly identified by dog detector: 99 % in human collection
-percentage dog faces detected by dog detector: 99 % in dog collection
+<pre>percentage dog faces identified by dog detector: 1 % in human collection
+percentage dog faces identified by dog detector: 91 % in dog collection
 </pre>
 </div>
 </div>
@@ -13899,7 +13899,7 @@ percentage dog faces detected by dog detector: 99 % in dog collection
                                      <span class="n">transforms</span><span class="o">.</span><span class="n">RandomHorizontalFlip</span><span class="p">(</span><span class="n">p</span><span class="o">=</span><span class="mf">0.25</span><span class="p">),</span>
                                      <span class="n">transforms</span><span class="o">.</span><span class="n">ToTensor</span><span class="p">(),</span><span class="n">normalize</span><span class="p">])</span>
 
-<span class="n">test_transform</span> <span class="o">=</span> <span class="n">transforms</span><span class="o">.</span><span class="n">Compose</span><span class="p">([</span><span class="n">transforms</span><span class="o">.</span><span class="n">RandomResizedCrop</span><span class="p">(</span><span class="mi">224</span><span class="p">),</span>
+<span class="n">test_transform</span> <span class="o">=</span> <span class="n">transforms</span><span class="o">.</span><span class="n">Compose</span><span class="p">([</span><span class="n">transforms</span><span class="o">.</span><span class="n">CenterCrop</span><span class="p">(</span><span class="mi">224</span><span class="p">),</span>
                                      <span class="n">transforms</span><span class="o">.</span><span class="n">ToTensor</span><span class="p">(),</span><span class="n">normalize</span><span class="p">])</span>
 
 
@@ -13966,8 +13966,10 @@ Num valid images:  835
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer</strong>:</p>
-<p>I have resized the images to a 224 square using transforms.RandomResizedCrop so that the aspect ratio and location in the image is randomized during training - but not testing. The size of 224 square is standard for this type of image data.</p>
-<p>To make the model scale, rotation and translation invariant, I have added randomizing transforms when loading the training data.</p>
+<p>I have cropped the given image to random size and aspect ratio using transforms.RandomResizedCrop. This transform is performed in training, but not testing. The size of 224 square is standard for this type of image data.</p>
+<p>To make the model center invariant, I have used RandomAffine with a max of 10 degrees of shift.</p>
+<p>To make the model rotation invariant, I have used RandomRotation with a max of 25 degrees of random rotation.</p>
+<p>To train the model for different orientations of the image, I have used vertical and horizontal flipping with a 25% probability of flipping during training.</p>
 
 </div>
 </div>
@@ -14443,10 +14445,10 @@ Epoch: 100 	Training Loss: 0.000510 	Validation Loss: 0.000488
         <span class="mf">100.</span> <span class="o">*</span> <span class="n">correct</span> <span class="o">/</span> <span class="n">total</span><span class="p">,</span> <span class="n">correct</span><span class="p">,</span> <span class="n">total</span><span class="p">))</span>
 
 <span class="c1"># load the model that got the best validation accuracy</span>
-<span class="c1">#model_scratch.load_state_dict(torch.load(&#39;model_scratch.pt&#39;))</span>
+<span class="n">model_scratch</span><span class="o">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;model_scratch.pt&#39;</span><span class="p">))</span>
 
 <span class="c1"># call test function    </span>
-<span class="c1">#test(loaders_scratch, model_scratch, criterion_scratch, use_cuda)</span>
+<span class="n">test</span><span class="p">(</span><span class="n">loaders_scratch</span><span class="p">,</span> <span class="n">model_scratch</span><span class="p">,</span> <span class="n">criterion_scratch</span><span class="p">,</span> <span class="n">use_cuda</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14597,7 +14599,7 @@ Epoch: 100 	Training Loss: 0.000510 	Validation Loss: 0.000488
                                      <span class="n">transforms</span><span class="o">.</span><span class="n">RandomHorizontalFlip</span><span class="p">(</span><span class="n">p</span><span class="o">=</span><span class="mf">0.25</span><span class="p">),</span>
                                      <span class="n">transforms</span><span class="o">.</span><span class="n">ToTensor</span><span class="p">(),</span><span class="n">normalize</span><span class="p">])</span>
 
-<span class="n">test_transform</span> <span class="o">=</span> <span class="n">transforms</span><span class="o">.</span><span class="n">Compose</span><span class="p">([</span><span class="n">transforms</span><span class="o">.</span><span class="n">RandomResizedCrop</span><span class="p">(</span><span class="mi">224</span><span class="p">),</span>
+<span class="n">test_transform</span> <span class="o">=</span> <span class="n">transforms</span><span class="o">.</span><span class="n">Compose</span><span class="p">([</span><span class="n">transforms</span><span class="o">.</span><span class="n">CenterCrop</span><span class="p">(</span><span class="mi">224</span><span class="p">),</span>
                                      <span class="n">transforms</span><span class="o">.</span><span class="n">ToTensor</span><span class="p">(),</span><span class="n">normalize</span><span class="p">])</span>
 
 
@@ -14945,7 +14947,7 @@ Test Accuracy: 75% (633/836)
        <span class="n">std</span><span class="o">=</span><span class="p">[</span><span class="mf">0.229</span><span class="p">,</span> <span class="mf">0.224</span><span class="p">,</span> <span class="mf">0.225</span><span class="p">]</span>
     <span class="p">)</span>
     <span class="n">preprocess</span> <span class="o">=</span> <span class="n">transforms</span><span class="o">.</span><span class="n">Compose</span><span class="p">([</span>
-       <span class="n">transforms</span><span class="o">.</span><span class="n">RandomResizedCrop</span><span class="p">(</span><span class="mi">224</span><span class="p">),</span>
+       <span class="n">transforms</span><span class="o">.</span><span class="n">CenterCrop</span><span class="p">(</span><span class="mi">224</span><span class="p">),</span>
        <span class="n">transforms</span><span class="o">.</span><span class="n">ToTensor</span><span class="p">(),</span>
        <span class="n">normalize</span>
     <span class="p">])</span>
